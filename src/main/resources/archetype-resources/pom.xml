@@ -7,6 +7,9 @@
   <version>${version}</version>
   <name>${artifactId}</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <build>
   <plugins>
       <plugin>
@@ -30,7 +33,7 @@
         </configuration>
         <executions>
           <execution>
-            <phase>test</phase>
+            <phase>verify</phase>
             <goals>
               <goal>check</goal>
             </goals>
@@ -42,11 +45,15 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>2.16</version>
         <configuration>
-            <configLocation>checkstyle.xml</configLocation>
+          <configLocation>checkstyle.xml</configLocation>
+          <encoding>UTF-8</encoding>
+          <consoleOutput>true</consoleOutput>
+          <failsOnError>true</failsOnError>
+          <linkXRef>false</linkXRef>
         </configuration>
         <executions>
           <execution>
-            <phase>test</phase>
+            <phase>verify</phase>
             <goals>
               <goal>check</goal>
             </goals>
