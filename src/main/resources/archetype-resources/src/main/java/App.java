@@ -1,6 +1,6 @@
 package ${package};
 
-public class App {
+public final class App {
 
     private App() {
     }
