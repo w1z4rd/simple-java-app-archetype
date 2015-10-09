@@ -23,4 +23,5 @@
         <include>.travis.yaml</include>
       </includes>
     </fileSet>
+  </fileSets>
 </archetype-descriptor>
