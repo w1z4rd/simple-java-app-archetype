@@ -19,13 +19,8 @@
       <directory></directory>
       <includes>
         <include>checkstyle.xml</include>
-      </includes>
-    </fileSet>
-    <fileSet encoding="UTF-8">
-      <directory></directory>
-      <includes>
         <include>.gitignore</include>
+        <include>.travis.yaml</include>
       </includes>
     </fileSet>
-  </fileSets>
 </archetype-descriptor>
